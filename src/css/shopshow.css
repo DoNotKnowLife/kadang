@@ -1,0 +1,419 @@
+/*重置当前页面字体样式*/
+body{
+	font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5B8B\4F53',sans-serif;
+}
+.kd-detail-body {
+	margin: 0 auto;
+	width: 1200px;
+	background-color: #fff;
+}
+.first-screen {
+	margin-bottom: 30px;
+}
+
+.first-screen .goods-main {
+	float: left;
+	padding-top: 35px;
+	padding-right: 8px;
+	width: 972px;
+}
+.goods-main .goods-data .goods-show {
+	float: left;
+	width: 400px;
+	_display: inline;
+}
+.kd-img-zoom {
+	width: 398px;
+	height: 398px;
+	border: 1px solid #dedede;
+	overflow: hidden;
+}
+.kd-img-zoom a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 72px;
+}
+.zoomPad {
+	position: relative;
+	float: left;
+	z-index: 99;
+	cursor: crosshair;
+}
+.kd-img-slide {
+	margin-top: 20px;
+	overflow: hidden;
+}
+.kd-img-slide ul{
+	margin-left: -25px;
+}
+.kd-img-slide ul li{
+	float: left;
+	margin-left: 25px;
+	_display: inline;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+.kd-img-slide ul li a {
+	display: block;
+	position: relative;
+	padding: 1px;
+	width: 54px;
+	height: 54px;
+	text-align: center;
+	border: 2px solid #eaeaea;
+	color: #fff;
+}
+.kd-img-slide ul li a.zoomThumbActive {
+	border-color: #666;
+}
+.kd-img-slide ul li a img{
+	max-width: 54px;
+	max-height: 54px;
+}
+.lay-social {
+	position: relative;
+	height: 56px;
+}
+.lay-social .social-action {
+	padding-top: 20px;
+}
+.lay-social .social-action a {
+color: #999;
+}
+.lay-social .social-action a:hover{
+	text-decoration: underline;
+}
+.icons, .detail-icons, .sel-item .sel-mark {
+	background: url(http://res.kadang.cn/img/mall/detail/icons.png) -999em -999em no-repeat;
+}
+.detail-icons-share {
+	background-position: -64px -61px;
+}
+.detail-icons-fav, .detail-icons-share {
+	width: 12px;
+	height: 14px;
+}
+.detail-icons {
+	display: inline-block;
+	margin: 0 3px;
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.goods-main .goods-data .goods-text {
+	float: left;
+	padding-left: 20px;
+	width: 540px;
+	_display: inline;
+}
+.lay-title {
+	font: 16px/24px "Microsoft YaHei";
+	padding: 0 12px;
+}
+.lay-comment {
+	padding: 10px 12px 16px;
+	margin-right: 10px;
+}
+.lay-comment .mod-cont {
+	position: relative;
+	text-indent: 2em;
+	line-height: 180%;
+	color: #666;
+}
+.lay-comment .icon {
+	position: absolute;
+	margin: 0 3px;
+	width: 12px;
+	height: 12px;
+	background: url(http://res.kadang.cn/img/mall/detail/icons.png) -999em -999em no-repeat;
+}
+.lay-comment .icon-leftquote {
+	left: 0;
+	top: 0;
+	background-position: 0 -43px;
+}
+.lay-comment .icon-rightquote {
+	right: 0;
+	bottom: 0;
+	background-position: -22px -43px;
+}
+/*价格*/
+.lay-bg {
+	background: url(http://res.kadang.cn/img/mall/detail/huawen.png) no-repeat;
+	width: 504px;
+	padding: 6px 12px;
+	margin-right: 10px;
+}
+.mod-unit dt {
+	float: left;
+	width: 80px;
+	margin-top: 12px;
+}
+.mod-unit dd {
+	float: left;
+	width: 420px;
+}
+
+.lay-meta .row-price {
+	font-family: Tahoma,Arial;
+	font-size: 24px;
+	font-weight: bold;
+	color: #e84847;
+}
+.lay-meta .row-price .dollar {
+	font-style: normal;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 14px;
+	color: #e84847;
+}
+.lay-meta .row-price {
+	font-family: Tahoma,Arial;
+	font-size: 24px;
+	font-weight: bold;
+	color: #e84847;
+}
+.lay-meta .row-price .promotion em {
+	background: url(http://res.kadang.cn/img/mall/detail/icons.png) no-repeat;
+	display: inline-block;
+	height: 18px;
+	vertical-align: middle;
+	margin-right: 2px;
+}
+.lay-meta .row-price .promotion em.my {
+	background-position: -10px -260px;
+	width: 49px;
+}
+/*地址填写*/
+.lay-meta {
+	margin-right: 10px;
+	padding: 0 12px;
+}
+.mod-unit dt {
+	float: left;
+	width: 80px;
+	margin-top: 12px;
+}
+.mod-unit dd {
+	float: left;
+	width: 420px;
+}
+.lay-meta .mail-addr, .lay-meta .addr-txt {
+	margin: 10px 0;
+}
+.mailAddr .addrDl {
+	position: relative;
+	display: inline;
+	float: left;
+	margin-right: 8px;
+}
+.mailAddr .addrDl dt {
+	cursor: pointer;
+	height: 20px;
+	padding: 0 6px;
+	line-height: 18px;
+	border: 1px solid #dedede;
+	float: none;
+	width: auto;
+	margin-top: 0;
+}
+.mailAddr .addrDl dt i {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-color: #606060 transparent transparent;
+	border-width: 4px 4px 0;
+	border-style: solid;
+	margin: 3px 0 3px 6px;
+	vertical-align: middle;
+}
+.mailAddr .addrDl dd {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	top: 21px;
+	left: 0;
+	width: 350px;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #dedede;
+}
+.mailAddr .icon-crd {
+	float: left;
+	display: inline;
+	margin: 4px 0 0 4px;
+	width: 45px;
+	height: 16px;
+	background: url(http://res.kadang.cn/img/mall/detail/icons.png) -14px -372px no-repeat;
+}
+.lay-data {
+	color: #ccc;
+	margin-top: 24px;
+	border-top: 1px dotted #dedede;
+	border-bottom: 1px dotted #dedede;
+	width: 430px;
+	padding: 15px 10px 15px 84px;
+}
+.lay-data p {
+	color: #666;
+	font-size: 12px;
+	display: inline-block;
+	_zoom: 1;
+	margin: 0 10px;
+}
+.lay-meta .row-boss .airlines, .lay-data .row-boss .airlines {
+	cursor: pointer;
+	font-size: 12px;
+	color: #6da4e3;
+	line-height: 22px;
+	display: inline-block;
+	margin: 1px;
+	padding: 0 5px;
+}
+.lay-meta .row-boss .detail-icons-person, .lay-data .row-boss .detail-icons-person {
+	height: 22px;
+	width: 20px;
+	background: url(http://res.kadang.cn/img/mall/common/onair.gif) no-repeat 0 2px;
+}
+/*购买商品数量*/
+.lay-custom {
+	padding: 5px 10px;
+	margin-left: -15px;
+}
+.lay-custom .valid-cont {
+	position: relative;
+	border: 2px solid #fff;
+}
+.lay-custom .mod-unit {
+padding-left: 15px;
+}
+.mod-unit dt {
+	float: left;
+	width: 80px;
+	margin-top: 12px;
+}
+.mod-unit dd {
+	float: left;
+	width: 420px;
+}
+.sel-count {
+	padding-top: 10px;
+}
+.sel-count .vm-control {
+	position: relative;
+	z-index: 1;
+	height: 29px;
+	width: 96px;
+	overflow: hidden;
+	float: left;
+}
+.sel-count .vm-control a {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	background: #f0f0f0;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid #dedede;
+	text-align: center;
+}
+.sel-count .vm-control .minus {
+	left: 0;
+}
+.sel-count .vm-control .plus {
+	left: 66px;
+}
+.sel-count .vm-control input {
+	width: 38px;
+	height: 22px;
+	position: absolute;
+	z-index: 2;
+	left: 27px;
+	border: 1px solid #dedede;
+	padding: 2px 0;
+	text-align: center;
+	color: #343434;
+}
+.sel-count .count-tip {
+	color: #999;
+	padding-left: 20px;
+	line-height: 26px;
+}
+/*购买按钮*/
+.lay-buy {
+	padding: 15px 0;
+	margin-right: 10px;
+}
+.main-diy {
+	padding-top: 10px;
+	padding-left: 13px;
+	font-size: 0;
+}
+.main-diy a {
+	margin-right: 7px;
+}
+.kd-btn-buy {
+	color: #fff;
+	background-color: #F4614C;
+}
+.kd-btn-buy:hover{
+	color: #fff;
+	background-color: #f00;
+}
+.kd-btn-cart {
+	color: #fff;
+	background-color: #78C9C4;
+}
+.kd-btn-cart:hover{
+	color: #fff;
+	background-color: #67b8b3;
+}
+.kd-btn-collect {
+	border-color: #ccc;
+	color: #010101;
+	background-color: #f8f8f8;
+}
+.kd-btn-collect:hover{
+	color: #010101;
+	background-color: #f8f8f8;
+	background-color: #E1E1E1;
+}
+.kd-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	font-family: 'Hiragino Sans GB','Microsoft YaHei';
+}
+.kd-btn-collect i {
+	display: inline-block;
+	width: 13px;
+	height: 11px;
+	background: url(http://res.kadang.cn/img/mall/list/common.png) -65px -5px no-repeat;
+	margin-right: 5px;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="../css/index.css"/>-->
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			outline: none;
+		}
+		body{
+			height: 10000px;
+		}
+		
+		a{
+			color: #000000;		
+		}
+		a:hover{
+			color: #F45E4B;			
+		}
+		.a_no_line{
+			text-decoration: none;
+		}
+		.shade{
+			/*position: absolute;
+			top: 0px;
+			left: 0px;*/
+			opacity: 0.2;
+			/*z-index: 999;*/
+			width: 1403px;
+			height: 7928px;
+			background-color: rgb(0, 0, 0);
+			display: none;
+		}
+		.enter_box{
+			width: 1150px;
+			height: 590px;
+			position: absolute;
+			right: -1150px;
+			top: 0;
+			background: #fff;
+			padding-top: 25px;
+			z-index: 9000;
+			overflow: hidden;
+			
+		}
+		.boss{
+			position: fixed;		
+			right: 0;
+			top: 0;			
+			z-index: 9000;
+			overflow: visible;
+			font-size: 12px;
+			font-family: "微软雅黑";
+		}
+		.eb_close{
+			width: 40px;
+			height: 40px;
+			background-color: #f00;
+			position: absolute;
+			left: 0;
+			top: 0;
+			cursor: pointer;
+			background-image: url(../img/closePop.gif);
+			background-repeat: no-repeat;
+			background-position: center center;
+			
+		}
+		
+		/*.quick-login{
+			overflow: hidden;
+			width: 640px;
+			padding: 50px;
+			margin: 0 auto;
+		}
+		.quick-cont{			
+			float: left;
+			display: inline;
+			overflow: hidden;
+			width: 195px;
+			line-height: 1.5;
+		}
+		input.btn-h45, input.btn-h45:visited{
+			height: 45px;
+			font-size: 18px;
+		}
+		.quick-login .autologin {
+			padding-left: 20px;
+			background: url(../img/login.png) no-repeat 0 -354px;
+			cursor: pointer;
+			color: #999;
+		}
+		.quick-login .doauto {
+			padding-left: 20px; 
+			background-position: 0 -390px;
+		}*/
+		.enter_form_box{
+			margin:0 auto;
+			padding: 50px;
+			width: 640px;
+			overflow: hidden;
+		}
+		.enter_form_box a:hover{
+			text-decoration: underline;
+		}
+		.sj_dl{
+			
+			width: 195px;
+		}
+		.sj_dl dt{
+			margin-bottom: 20px;
+		}
+		.sj_dl dt h3{
+			font-weight: lighter;
+			font-size:18px;
+			color:#333;
+		}
+		.sj_dl dt p{
+			color: #999999;
+			font-size: 14px;
+		}
+		.sj_dl dd{
+			float: left;
+			margin-right:17px ;
+		}
+		.sj_dl dd a{
+			display: block;
+			padding-top:44px;
+			width: 44px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+			color: #333;
+			background:url(../img/login.png) no-repeat;
+		}	
+		.sj_dl dd a:hover{
+			color:#F45E4B;
+			text-decoration: underline;
+		}	
+		.sj_dl dd .tx_enter{
+			background-position:0 -68px;
+		}
+		.sj_dl dd .zfb_enter{
+			background-position:0 -137px;
+		}
+		.enter_form,.login_form{
+			width: 320px;
+			height: 279px;
+			padding-left:25px ;
+			float: left;
+			border-left: 1px solid #E8E8E8;
+		}
+		.form_title{
+			height: 20px;
+			font-size: 18px;
+			color: #333333;	
+			margin: 8px 0 30px 0;
+			text-shadow: 1px 1px 0 #FFF;	
+		}
+		.username,.userpassword,.login_uname,.login_upass{
+			border: 1px solid #D8D8D8;
+			width: 280px;
+			height: 32px;
+			padding:1px 1px 1px 32px ;
+			border-radius: 2px;
+			line-height: 32px;
+			
+			background: url(../img/login.png) no-repeat ;
+		}
+		.username,.login_uname{
+			background-position: 7px -203px;
+			
+		}
+		.userpassword,.login_upass{
+			background-position: 7px -238px;
+		}
+		.autologin{
+			height: 16px;
+			line-height: 16px;
+			padding-left: 20px;
+			background: url(../img/login.png) no-repeat 0 -354px;
+			cursor: pointer;
+			color: #999;
+		}
+		.doauto{	
+			background-position: 0 -390px;
+		}
+		.nowenter,.agreement{
+			width: 320px;
+			height: 45px;
+			font-size: 18px;
+			background: #F6614B;
+			color: #fff;
+			display: inline-block;
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			font-weight: bold;
+			border: 1px solid #F6614B;
+			padding: 0 20px;
+			margin: 5px 0 10px 0;
+		}
+		.entername_hint,.enterpass_hint,.loginname_hint,.loginpass_hint{
+			height:20px;
+			margin-bottom: 10px;
+		}
+		.widthChange{
+			background-color: red;
+			width: 100px;
+			height: 50px;
+			transition: width 0.5s;
+			-moz-transition: width 0.5s/* Firefox 4 */;
+			-webkit-transition: width 0.5s/* Safari and Chrome */;
+			-o-transition: width 0.5s/* Opera */;
+		}
+		</style>	
+		
+	</head>
+	<body>
+		<a href="javascript:;" class="enter_a">登录</a>
+		<a href="javascript:;" class="login_a">注册</a>
+		<div class="boss">
+			<div class="shade">
+				
+			</div><!--shade遮罩层结束-->			
+			<div class="enter_box">			
+				<div class="enter_form_box">
+					<span class="eb_close"></span>				
+			   		<dl  class="sj_dl lt">
+			   			<dt>
+			   				<h3>无需注册</h3>
+			   				<p>直接用社交网站登录</p>
+			   			</dt>
+			   			<dd>
+			   				<a class="wb_enter" href="javascript:;">
+			   					微博
+			   				</a>
+			   			</dd>
+			   			<dd>
+			   				<a class="tx_enter" href="javascript:;">腾讯</a>
+			   			</dd>
+			   			<dd>
+			   				<a class="zfb_enter" href="javascript:;">支付宝</a>
+			   			</dd>
+			   		</dl><!--sj_dl结束-->
+
+					<div class="enter_form">
+				   		<form>
+				   			<legend class="form_title">用户登录</legend>
+				   			<input type="text" class="username" placeholder="邮箱/用户名"/>
+				   			<p class="entername_hint"></p>
+				   			<input type="text" class="userpassword" placeholder="密码"/>
+				   			<p class="enterpass_hint"></p>
+				   			<p><span class="autologin">下次自动登录</span></p>
+				   			<p><input type="submit" class="nowenter" name="" value="立即登录"/></p>
+				   			<p>还没账号？  <a href="javascript:;" class="toregister_a">注册</a><a href="javascript:;" class="forgetpassword rt">忘记密码？</a></p>
+				   		</form>
+				   </div><!--enter_form结束-->
+				   <div class="login_form">
+				   		<form>
+				   			<legend class="form_title">用户注册</legend>
+				   			<input type="text" class="login_uname" placeholder="邮箱"/>
+				   			<p class="loginname_hint"></p>
+				   			<input type="text" class="login_upass" placeholder="密码"/>
+				   			<p class="loginpass_hint"></p>
+				   			<p><a href="javascript:;" class="kdlogin_protocol">《卡当注册协议》</a></p>
+				   			<p><input type="submit" class="agreement" name="" value="同意协议并注册"/></p>
+				   			<p>已有账号？  <a href="javascript:;" class="tologin_a">登录</a></p>
+				   		</form>
+				   </div><!--login_form结束-->			   
+				</div><!--enter_form_box结束-->
+			</div><!--enter_box结束 ||登录/注册弹出框结束-->			
+		</div><!--boss结束-->
+		
+		<div class="widthChange">
+			
+		</div>
+		
+		<script src="../jQuery/jquery-1.12.0.js"></script>
+		<script src="../jquery-ui/jquery-ui.js"></script>
+		<script src="../js/enter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".widthChange").hover(
+					function(){
+						$(this).css({"width":200});
+					},
+					function(){
+						$(this).css({"width":100})
+					}
+				)
+			});
+		</script>
+		
+	</body>
+</html>
