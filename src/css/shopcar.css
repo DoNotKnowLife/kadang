@@ -1,0 +1,538 @@
+a { color: #336699; text-decoration: none; -webkit-transition-property:color; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+a:hover { text-decoration: underline; color: #F60;}
+/*======================================================page========================================================*/
+body{
+	font-size: 63%;
+	background: #F8FBFE url(../img/buyer_bg.png) repeat-x scroll center top;
+}
+.wywrap{
+	margin: 0 auto;
+}
+.page{
+	width: 100%;
+	height: 39px;
+	border-bottom: 1px solid #dedede;
+	background-color: #f8f8f8;
+}
+.pgwrap{
+	width: 990px;
+	height: 39px;
+	position: relative;
+	z-index: 998;
+	line-height: 39px;
+	background-color: #FFF;
+	border: solid 1px #C4D5E0;
+	border-radius: 4px;
+	margin: 0 auto;
+}
+
+.myinfo{
+	width: 550px;
+	height: 39px;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+}
+.myinfo dt{
+	padding: 0 5px 0 20px;
+}
+.myinfo dt span{
+	padding: 0 5px;
+}
+.myinfo dt a{
+	font-weight:600;
+}
+.myinfo dd{
+	padding: 0 4px;
+}
+.myshop li{
+	float: left;
+	margin-left: -1px;
+}
+
+.myshop li a{
+	display: inline-block;
+	padding:1px 17px 0 5px;
+	line-height: 38px;
+	height: 38px;
+	margin: 1px 1px 0 1px;
+	position: relative;
+}
+.myshop li>a i{
+	font-size: 0px;
+	line-height: 0;
+	width: 0px;
+	height: 0px;
+	border-width: 4px;
+	border-color: #F4614C transparent transparent transparent;
+	border-style: solid dashed dashed dashed;
+	position: absolute;
+	top: 19px;
+	right: 5px;
+}
+/*======================================================head========================================================*/
+.hdwrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+.head{
+	line-height: 20px;
+	background: url(../img/buyer_header.png) no-repeat scroll center top;
+	width: 100%;
+	height: 90px;
+	_height: 65px;
+	padding-top: 25px;
+}
+.logo_shio{
+	float: left;
+	width: 230px;
+	overflow: hidden;
+}
+.logo_shio a{
+	text-indent: -999em;	
+}
+nav{
+	background-color: rgba(255,80,10,0.8) !important;
+	background-color: #F9703A\9/* IE6-8 */;
+	width: 770px;
+	height: 38px;
+	float: left;
+	border-radius: 5px;
+	/*兼容火狐和webkit内核的浏览器*/
+	box-shadow: 0 2px 0 rgba(193,219,232,0.3);
+	-moz-box-shadow: 0 2px 0 rgba(193,219,232,0.5)/* Firefox 4 */;
+	-webkit-box-shadow: 0 2px 0 rgba(193,219,232,0.3)/* Safari and Chrome */;
+}
+.buyer_info li a{
+	color: #FFFFFF;
+	text-align: center;
+	float: left;
+	padding: 9px 24px;
+	border-style: solid;
+	border-color: transparent #D65700 transparent #FF8428;
+	border-width: 0 1px;
+	font-size: 1.4em;
+	font-weight: 700;
+	position: relative;
+	z-index: 1;/*?*/
+}
+.buyer_info li.first a{
+	border-radius: 5px 0 0 5px;
+}
+.buyer_info li a.active{
+	background-color: #DD5A22;
+	text-shadow: 1px 1px 0 rgba(181,54,0,1);
+}
+.buyer_info li a:hover{
+	background-color: #DD5A22;
+	text-shadow: 1px 1px 0 rgba(181,54,0,1);
+}
+/*搜索框*/
+.searchbox{
+	float: right;
+	width: 240px;
+	border-left: solid 1px #FF8428;
+	height: 26px;
+	padding: 6px 16px 6px 39px;
+	position: relative;
+	z-index: 1;
+}
+.searchbox .searchtxt{
+	float: right;
+	width: 200px;
+	font-family: Tahoma;
+	line-height: 16px;
+	background: #FFFFDF;
+	padding: 4px 2px 6px 4px !important;
+	border: none !important;
+	border-radius: 3px;
+	box-shadow: 1px 3px 1px #FFB775 inset !important;
+	/*http://www.w3school.com.cn/cssref/pr_transition.asp
+	规定样式改变的过度效果*/
+	transition: width 0.5s;
+	-moz-transition: width 0.5s/* Firefox 4 */;
+	-webkit-transition: width 0.5s/* Safari and Chrome */;
+	-o-transition: width 0.5s/* Opera */;
+}
+/*======================================================main_info========================================================*/
+.mainwrap{
+	
+	width: 1000px;
+	font-size: 1.2em;
+	line-height: 20px;
+	margin: -25px auto 0;
+}
+.mainwrap .main_info{
+	background: #FFF url(../img/mubg.png) repeat-y scroll center top;
+	width: 998px;
+	border: solid 1px #D5E5F5;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 480px;
+}
+.mainwrap .main_info .sidebar{
+	width: 153px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+.sidebar h3{
+	font-size: 1.2em;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.sidebar .buyer_datum{
+	width: 140px;
+	height: 130px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.username{
+	font-weight: 600;
+	line-height: 28px;
+	width: 102px;
+	height: 28px;
+	text-align: center;
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 19px;
+}
+.username a{
+	color: #369;
+}
+.userpic{
+	width: 102px;
+	height: 102px;
+	position: absolute;
+	z-index: 9;
+	top: 28px;
+	left: 19px;
+}
+.userpic img{
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+}
+.business-info{
+	width: 120px;
+	padding-bottom: 10px;
+	margin: 10px auto 10px;
+	border-bottom: solid 1px #D5E5F5;
+	box-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+.business-info ul li{
+	clear: left;
+	overflow: hidden;
+}
+.business-info ul li a{
+	background: url(../img/ncus_public.png) no-repeat scroll 0 -330px;
+	_background-image: url(../img/ncus_public.gif)/*IE6*/;
+	float: left;
+	padding-left: 10px;
+	color: #455E65;
+}
+.business-info ul li a:hover{
+	color:#336699 ;
+	text-decoration: underline;
+}
+.business-info ul li i{
+	font-style: normal;
+	font-size: 0.8em;
+	font-weight: 700;
+	color: #FFF;
+	line-height: 16px;
+	background-color: #C9E0E7;
+	float: right;
+	padding: 0 8px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+.business-handle{
+	width: 100%;
+	margin: 10px auto 20px;
+	
+}
+
+
+.business-handle h3, .member-handle h3 {
+	margin-left: 16px;
+}
+.business-handle dl{
+	overflow: hidden;
+}
+
+.business-handle dl.collapsed {
+	height: 32px;
+}
+.business-handle  a, .member-handle ul li a {
+color: #455E65;
+line-height: 20px;
+float: left;
+}
+.business-handle a:hover {
+	color: #7FB8D2;
+	text-decoration: underline;
+}
+.business-handle div em, .business-handle dl dt em {
+	width: 20px;
+	height: 20px;
+	background: url(../img/ncus_public.png) no-repeat scroll;
+	_background-image: url(../img/ncus_public.gif)/*IE6*/;
+	float: left;
+	margin-right: 8px;
+}
+.business-handle div em.xtb_1{
+	background-position: -40px -380px;
+}
+.business-handle dl em.xtb_2{
+	background-position:-80px -380px;
+}
+.business-handle div em.xtb_3{
+	background-position:-140px -380px ;
+}
+.business-handle div em.xtb_4{
+	background-position:-160px -380px ;
+}
+.business-handle dl dt,.business-handle dl dd{
+	padding: 6px 12px;
+}
+.business-handle div, .member-handle ul li {
+	clear: left;
+	padding: 6px 12px;
+	overflow: hidden;
+}
+.business-handle dl dd, .member-handle ul li {
+	clear: both;
+	padding: 6px 0 6px 48px;
+	overflow: hidden;
+}
+.business-handle dl a {
+	color: #455E65;
+	line-height: 20px;
+}
+.business-handle dl.collapsed dt i {
+	font-size: 0px;
+	line-height: 0;
+	width: 0px;
+	height: 0px;
+	margin-left: 6px;
+	_margin-left: 3px;
+	border-width: 4px;
+	border-color: #80B8D2 transparent transparent transparent;
+	border-style: solid dashed dashed dashed;
+}
+.business-handle .my_coupons a{
+	margin-left: 27px;
+}
+.hint{
+	padding: 10px 10px;
+}
+.hint p{
+	text-indent:2em;
+}
+.hint p span{
+	color:#336699
+}
+/*右侧内容栏*/
+.mainwrap .main_info .right_content{
+	width: 844px;
+}
+.mainwrap .main_info .right_content .wrap{
+	clear: both;
+	margin: 0;
+	padding: 14px;
+}
+.wrap .layout_l{
+	width: 580px;
+	padding: 0 0 10px 0;
+}
+.layout_l .member_info{
+	background: #F8FBFE;
+	width: 550px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.member_info dl dt{
+	font-size:1em;
+	line-height:24px;
+	color:#999;
+	display:inline-block;
+	*float: left;
+}
+
+.member_info dl dt a{
+	font-size:1.3em;
+	line-height:24px;
+	font-weight:600;
+	display:inline-block;
+}
+
+.member_info dl dd{
+	display:inline-block;
+	*float:left/*IE7*/;
+	_float:left/*IE6*/;
+	margin:0 10px;
+	line-height:26px;
+	height:26px;
+}
+.logisticsInfo {
+	border: 1px solid #ddd;
+	padding: 14px 10px;
+}
+.logisticsInfo_title{	
+	margin-bottom: 10px !important;
+}
+.logisticsInfo_title>.loginfo{
+	font: bold 14px/14px "宋体";
+	color: #333;
+	float: left;
+	margin-left: 10px;
+}
+.logisticsInfo_title>.loginfo i{
+	background: url(../img/icon_m.png) left top no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 13px;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+.logisticsInfo_title>p{
+	float: left;
+	margin-left: 30px;
+	display: inline;
+}
+.logisticsInfo_title>p a{
+	color: #666;
+}
+.logisticsInfo_title>p a:hover{
+	color: #7FB8D2;
+	text-decoration: underline;
+}
+.logisticsInfo_title>p a em{
+	margin-left: 4px;
+	color: #e44715;
+	font-style: normal;
+}
+.logisticsInfo_title p span{
+	color: #dedede;
+	margin: 0 6px;
+}
+.logisticDetail .noOrInfo {
+	margin: 50px 0;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+}
+.logisticDetail .noOrInfo a{
+	color: #e44715;
+	text-decoration: underline;
+}
+/*右侧访客信息栏*/
+.wrap .layout_r{
+	width: 200px;
+}
+.visitors_tab h4 span {
+	margin: 0 5px;
+}
+.visitors_tab h4 span.active {
+	color: #555;
+	font-weight: bold;
+}
+.visitors_tab h4 span.normal {
+	color: #7FB8D2;
+	font-weight: normal;
+	cursor: pointer;
+}
+.visitors_tab h4 span.interval {
+	color: #999;
+	font-size: 10px;
+	font-weight: 100;
+}
+.visit_other{
+	display: none;
+}
+.clear{
+	font-size: 0px;
+	line-height: 0px;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	float: none;
+	clear: both;
+	border: 0;
+}
+
+.content_bottom{
+	width: 815px;
+	font-family: "Microsoft YaHei";
+}
+.content_bottom h3{
+	padding-left: 20px;
+	
+	font-size: 18px;
+	font-weight: normal;
+}
+.content_bottom ul{
+	padding: 20px 0 0 8px;
+}
+.content_bottom ul  dl{
+	float: left;
+	margin: 0 9px;
+	padding-bottom: 20px;
+	width: 142px;
+}
+.content_bottom ul  dl a:hover{
+	text-decoration: none;
+}
+.content_bottom ul dl .del{
+	padding-right: 5px;
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+	text-decoration: line-through;
+}
+/*推荐商品图片框*/
+.content_bottom ul  dl .pic{
+	padding: 3px;
+	border: 1px solid #dedede;
+}
+.content_bottom ul  dl .pic img{
+	width: 135px;
+	height: 135px;
+	display: block;
+}
+/*推荐商品名称*/
+.content_bottom ul  dl .name{
+	padding: 5px;
+	height: 38px;
+	line-height: 20px;
+	overflow: hidden;
+}
+/*推荐商品价格*/
+.content_bottom ul  dl .price{
+	padding-left: 5px;
+	color: #F6614B;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+.content_bottom ul  dl s{
+	text-decoration: none;
+}
+/*======================================================foot========================================================*/
+.foot{
+	padding: 15px 0;
+}
+.foot_wrap{
+	
+	width: 1000px;
+	border-top: 1px solid #CCCCCC;
+}
+.lay-link{
+	margin-top:30px;
+}

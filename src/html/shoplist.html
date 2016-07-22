@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shoplist.css"/>
+	</head>
+	<body id="shop-list">
+<!--==========================================登录/注册================================================-->
+		<div class="boss">
+			<div class="shade">
+				
+			</div><!--shade遮罩层结束-->			
+			<div class="enter_box">			
+				<div class="enter_form_box">
+					<span class="eb_close"></span>				
+			   		<dl  class="sj_dl lt">
+			   			<dt>
+			   				<h3>无需注册</h3>
+			   				<p>直接用社交网站登录</p>
+			   			</dt>
+			   			<dd>
+			   				<a class="wb_enter" href="javascript:;">
+			   					微博
+			   				</a>
+			   			</dd>
+			   			<dd>
+			   				<a class="tx_enter" href="javascript:;">腾讯</a>
+			   			</dd>
+			   			<dd>
+			   				<a class="zfb_enter" href="javascript:;">支付宝</a>
+			   			</dd>
+			   		</dl><!--sj_dl其他账号登录结束-->
+
+					<div class="enter_form">
+				   		<form>
+				   			<legend class="form_title">用户登录</legend>
+				   			<input type="text" class="username" placeholder="邮箱/用户名"/>
+				   			<p class="entername_hint"></p>
+				   			<input type="text" class="userpassword" placeholder="密码"/>
+				   			<p class="enterpass_hint"></p>
+				   			<p><span class="autologin">下次自动登录</span></p>
+				   			<p><input type="submit" class="nowenter" name="" value="立即登录"/></p>
+				   			<p>还没账号？  <a href="javascript:;" class="toregister_a">注册</a><a href="javascript:;" class="forgetpassword rt">忘记密码？</a></p>
+				   		</form>
+				   </div><!--enter_form登录表单结束-->
+				   <div class="login_form">
+				   		<form>
+				   			<legend class="form_title">用户注册</legend>
+				   			<input type="text" class="login_uname" placeholder="邮箱"/>
+				   			<p class="loginname_hint"></p>
+				   			<input type="text" class="login_upass" placeholder="密码"/>
+				   			<p class="loginpass_hint"></p>
+				   			<p><a href="javascript:;" class="kdlogin_protocol">《卡当注册协议》</a></p>
+				   			<p><input type="submit" class="agreement" name="" value="同意协议并注册"/></p>
+				   			<p>已有账号？  <a href="javascript:;" class="tologin_a">登录</a></p>
+				   		</form>
+				   </div><!--login_form注册表单结束-->			   
+				</div><!--enter_form_box结束-->
+			</div><!--enter_box结束 ||登录/注册弹出框结束-->			
+		</div><!--boss结束-->
+<!--=====================================================头部===================================================================-->
+			<div class="head">
+				<div class="hdwrap">
+					<h1 class="logo">
+						<a href="index.html#index">卡当网</a>
+					</h1><!--logo结束-->
+					<div class="head_top">
+						<div class="hdt_lt lt">
+							Hi,欢迎来到卡当网
+							<a href="javascript:;" class="enter_a">登录</a>
+							<a href="javascript:;" class="login_a">注册</a>
+						</div><!--hdt_lt结束-->
+						<div class="hdt_rt rt">
+							<ul>
+								<li><a href="javascript:;">我的卡当<i class="xjt"></i></a></li>
+								<li><a href="javascript:;"><i class="car"></i>购物车<i class="xjt"></i></a></li>
+								
+								<li>
+									<a href="javascript:;" class="phone">
+										<i>手机版</i>
+									</a>
+								</li>
+								<!--此处手机图标设为i的背景图时不居中，上半部分超出a标签;-->
+								<li><a href="javascript:;">我的收藏<i class="xjt"></i></a></li>
+								<li><a href="javascript:;">在线客服</a></li>
+								<li><a href="javascript:;">收藏卡当网</a></li>
+							</ul>
+						</div><!--hdt_rt结束-->
+						
+					</div><!--head_top结束-->
+					<div class="head_bottom">
+						<img src="../img/kdDes.png" class="rt"/>
+						<div class="srchbox">
+							<form action="" method="post">							
+								<input type="text" value="" placeholder="不造女盆友喜欢什么，点这看看。" class="srchtxt"/>
+								<input type="submit" name="search" class="searchbtn" value="" />							
+							</form>
+							<div class="search_tab">
+								<a href="javascript:;">送女朋友</a>
+								<a href="javascript:;">浪漫表白</a>
+								<a href="javascript:;">我的订单查询</a>
+							</div><!--search_tab结束-->	
+						</div><!--srchbox结束-->
+					</div><!--head_bottom结束-->					
+				</div><!--hdwrap结束-->
+			</div><!--head结束-->
+<!--=====================================================导航栏==================================================================-->
+			<div class="nav">
+				<div class="navwrap">
+					<!--暂缺列表-->
+					<ul>
+						<li><a href="javascript:;" class="nav_secondary">送礼攻略</a></li>
+						<li><a href="index.html#index">首页</a></li>
+						<li><a href="javascript:;" class="birday">生日礼物</a></li>
+						<li><a href="javascript:;">送女生</a></li>
+						<li><a href="javascript:;">送男生</a></li>
+						<li><a href="javascript:;">贴心【午睡】装备</a></li>
+						<li><a href="javascript:;">本周新品</a></li>
+						<li><a href="javascript:;">创意礼物</a></li>
+					</ul>
+				</div><!--navwrap结束-->
+			</div><!--nav结束-->
+<!--=====================================================导航栏2===================================================-->
+			<div class="banner_wrap">
+				<div class="birgift">
+					<div class="birgift_wrap clearfix">
+						<p class="birgift_title lt">
+							生日礼物
+							<span>BIRTHDAY GIFT</span>
+						</p><!--birgift_title结束-->
+						<div class="birgift_nav clearfix lt">
+							<ul class="birgift_nav_list lt">
+								<li class="birgift_nav_title">送给谁</li>
+								<li><a href="javascript:;">女朋友/老婆</a></li>
+								<li><a href="javascript:;">暗恋的女同学</a></li>
+								<li><a href="javascript:;">好朋友</a></li>
+								<li><a href="javascript:;">男朋友/老公</a></li>
+							</ul>
+							<ul class="birgift_nav_list lt">
+								<li class="birgift_nav_title">礼物预算</li>
+								<li><a href="javascript:;">100元以内</a></li>
+								<li><a href="javascript:;">100-200元</a></li>
+								<li><a href="javascript:;">200-500元</a></li>
+								<li><a href="javascript:;">500元以上</a></li>
+							</ul>
+							<ul class="birgift_nav_list lt zhedie">
+								<li class="birgift_nav_title">礼物类型</li>
+								<li><a href="javascript:;">名字定制</a></li>
+								<li><a href="javascript:;">520我爱你</a></li>
+								<li><a href="javascript:;">创意礼物</a></li>
+								<li><a href="javascript:;">毛绒玩具</a></li>
+								<li><a href="javascript:;">巧克力/花</a></li>
+								<li><a href="javascript:;">项链手链</a></li>
+								<li><a href="javascript:;">浪漫表白</a></li>
+								<li><a href="javascript:;">天生一对</a></li>
+							</ul>	
+						</div><!--birgift_title结束-->
+					</div><!--birgift_wrap结束-->
+				</div><!--birgift结束-->
+	<!--=====================================================banner/bg================================================-->
+	<!--banner图start-->
+				<div class="bannerbg clearfix">
+					<div class="balft lt">
+						<ul>
+							<li><a href="javascript:;"><img src="../img/b6851dbe123e277f743acbb90c23c309.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/102a3fefaf50602894b0c6bd213b652a.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/20edadc23bec08a606de64b1d17e3e9b.jpg"/></a></li>
+						</ul>
+						<ul class="babtn"></ul>
+						<a class="balft_prev"></a>
+						<a class="balft_next"></a>
+					</div><!--banner_bg结束-->
+					<div class="bamid lt">
+						<a href=""><img src="../img/0454f41d577a4f7976063ca790ba1709.jpg"/></a>
+						<a href=""><img src="../img/9405d2c41b710cd7ebfeebadcb760c99.jpg"/></a>
+					</div><!--bamid结束-->
+					<div class="barit lt">
+						<a href=""><img src="../img/ceca64bc23cc52a6cddd7e1c9679a4ff.jpg"/></a>
+					</div><!--barit结束-->
+				</div><!--bannerbg结束-->
+	<!--banner图end-->	
+	<!--爆款推荐 start-->
+				<div class="hot_shop">
+					<p class="hot_shop_title">爆款推荐&nbsp;&nbsp;
+						<i></i>
+						<span>女生收到后，满意指数★★★★★</span>
+					</p>
+					<ul class="clearfix">
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/5_f8422d4df7ecd5e6a27a8e28d3e06582.jpg_mid.jpg"/></a></dt>
+								<dd class="clearfix">
+									<div class="hot_shop_bg">TOP1</div>
+									<p class="hot_shop_describe">正版hello kitty手柄化妆镜礼盒</p>
+									<p class="hot_shop_price"><span><i>￥</i>168</span>热卖28件</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/5_cc2916a3fcd80c5cd1db94d388db5cf6.jpg_mid.jpg"/></a></dt>
+								<dd class="clearfix">
+									<div class="hot_shop_bg">TOP1</div>
+									<p class="hot_shop_describe">正版hello kitty手柄化妆镜礼盒</p>
+									<p class="hot_shop_price"><span><i>￥</i>168</span>热卖28件</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/5_bbc4de78fdac6ce4837a59de35d13980.jpg_mid.jpg"/></a></dt>
+								<dd class="clearfix">
+									<div class="hot_shop_bg">TOP1</div>
+									<p class="hot_shop_describe">正版hello kitty手柄化妆镜礼盒</p>
+									<p class="hot_shop_price"><span><i>￥</i>168</span>热卖28件</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/5_a3570ea9e6d9ddc688d02745b95d9926.jpg_mid.jpg"/></a></dt>
+								<dd class="clearfix">
+									<div class="hot_shop_bg">TOP1</div>
+									<p class="hot_shop_describe">正版hello kitty手柄化妆镜礼盒</p>
+									<p class="hot_shop_price"><span><i>￥</i>168</span>热卖28件</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/90_2b7f2975346f2def2ce6d35cc6915cfc.jpg_mid.jpg"/></a></dt>
+								<dd class="clearfix">
+									<div class="hot_shop_bg">TOP1</div>
+									<p class="hot_shop_describe">正版hello kitty手柄化妆镜礼盒</p>
+									<p class="hot_shop_price"><span><i>￥</i>168</span>热卖28件</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/5_6603133b76481eec74297a2ae7fe9956.jpg_mid.jpg"/></a></dt>
+								<dd class="clearfix">
+									<div class="hot_shop_bg">TOP1</div>
+									<p class="hot_shop_describe">正版hello kitty手柄化妆镜礼盒</p>
+									<p class="hot_shop_price"><span><i>￥</i>168</span>热卖28件</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/5_8234a7501a4b47372401f35e4fb85fc3.jpg_mid.jpg"/></a></dt>
+								<dd class="clearfix">
+									<div class="hot_shop_bg">TOP1</div>
+									<p class="hot_shop_describe">正版hello kitty手柄化妆镜礼盒</p>
+									<p class="hot_shop_price"><span><i>￥</i>168</span>热卖28件</p>
+								</dd>
+							</dl>
+						</li>					
+					</ul>
+				</div><!--hot_shop结束-->
+		<!--爆款推荐end-->
+		<!--楼层start-->
+				<div class="louceng">
+					<p class="phtitle">
+						 1F·&nbsp;送女友/老婆&nbsp;&nbsp;
+						<i></i>
+						<span>生日礼物讲究浪漫有创意，更要体现心意</span>
+					</p>
+					<ul class="clearfix">
+						<li class="toppic"><a href="javascript:;"><img src="../img/e12aa4903384eaf1c2d06c1ab94f73c6.jpg"/></a></li>
+						<li class="toppic"><a href="javascript:;"><img src="../img/b1fa6e50dc2114330ab71a505f17dd37.jpg"/></a></li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_b08f492d11f95441dc2eadb333c81454.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_e53f738a71c377c6954510d09764a961.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_8cff2e00978c6593b58e0c016ba331c6.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_e2cd290cce2930121089628ea480f88f.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_31682cdad260a9955272a13f8699b1df.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/94_8c1cbb9257d69ef752eea9716c6b5923.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_814a416f0226bfeb77be9c90efb16ad9.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+				</div><!--louceng结束-->	
+				<div class="more">
+					<a href="javascript:;">创意又有新意</a>
+					<a href="javascript:;">把心都给你</a>
+					<a href="javascript:;">真爱不差钱</a>
+					<a href="javascript:;">巧克力/花</a>
+				</div><!--more结束-->
+			<!--2楼-->
+				<div class="louceng">
+					<p class="phtitle">
+						 2F·&nbsp;送暗恋的女同学&nbsp;&nbsp;
+						<i></i>
+						<span>花时间准备，小而精，送多件或一整套都是不错的选择</span>
+					</p>
+					<ul class="clearfix">
+						<li class="toppic"><a href="javascript:;"><img src="../img/5286ef91cdbadada59e574564afa580f.jpg"/></a></li>
+						<li class="toppic"><a href="javascript:;"><img src="../img/942c28c3c421250334d65e64fb08f33f.jpg"/></a></li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_c0d7db56c5a7a141e2095a055c8a2ed9.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_2af679a61ceefc1ecaefe1a3e7dc520c.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_8a13ed0d4331bf2c98d413e3a7a49f41.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/87_eb51918b7d7ed01ba62b2be1ae6a1f16.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_634039a12713f6318a52f41f62330adc.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_38efe215f07ef3a12f47da990c85a4f9.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/47_004671f1e904add4be3a89e6e2c7f685.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+				</div><!--louceng结束-->		
+				<div class="more">
+
+					<a href="javascript:;">我要表白</a>
+					<a href="javascript:;">她是小清新</a>
+					<a href="javascript:;">她爱萌萌哒</a>
+					<a href="javascript:;">第一次送礼</a>
+				</div><!--more结束-->
+			<!--3楼-->	
+				<div class="louceng">
+					<p class="phtitle">
+						 3F·&nbsp;送好朋友&nbsp;&nbsp;
+						<i></i>
+						<span>百元内，好玩、好看、好用、好吃的小玩意，足够让她心动</span>
+					</p>
+					<ul class="clearfix">
+						<li class="toppic"><a href="javascript:;"><img src="../img/b860bda1ab3abf9578b4395625a6ffc3.jpg"/></a></li>
+						<li class="toppic"><a href="javascript:;"><img src="../img/ea55af7d7375dca9bc06f2886b93a402.jpg"/></a></li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_6ccba89b1a9dbc461e0098e421d0d56d.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_480bcf5e515c8b912b22f5fc85e23ede.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_e46e35b83b7ef52b9bb62c67aa694aca.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_db3f6faaa1c5ef18135af195a2107e92.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_a0bc75b59859d343df87b0a129ce529d.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+				</div><!--louceng结束-->	
+				<div class="more">
+					<a href="javascript:;">她是小吃货</a>
+					<a href="javascript:;">实用礼物</a>
+					<a href="javascript:;">创意水晶</a>
+					<a href="javascript:;">新品推荐</a>
+				</div><!--more结束-->
+			<!--4楼-->
+				<div class="louceng">
+					<p class="phtitle">
+						 3F·&nbsp;送男友/老公&nbsp;&nbsp;
+						<i></i>
+						<span>懂得他的心，投其所好，送他最喜欢，最想要的</span>
+					</p>
+					<ul class="clearfix">
+						<li class="toppic"><a href="javascript:;"><img src="../img/97895c690ecd2397d1b3d8fd94b442e6.jpg"/></a></li>
+						<li class="toppic"><a href="javascript:;"><img src="../img/176244c4b23bcdb314a443768f7a1aac.jpg"/></a></li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_a425e626619b6dac2f373f3165d5648f.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_d0a291676cd620fe411c83711f6709f3.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<dl>
+									<dt><img src="../img/5_c0b29c3a545262f6f266e1eecee57a48.jpg_mid.jpg"/></dt>
+									<dd>
+										<p>真爱玫瑰花 可爱泰迪熊 3D内雕水晶炫彩音乐盒创意 当天发货</p>
+										<span><i>￥</i>99.00</span>
+									</dd>
+								</dl>
+							</a>
+						</li>		
+					</ul>
+				</div><!--louceng结束-->	
+				<div class="more">
+					<a href="javascript:;">动漫迷</a>
+					<a href="javascript:;">爱打游戏</a>
+					<a href="javascript:;">爱运动</a>
+					<a href="javascript:;">数码控</a>
+					<a href="javascript:;">爱时尚</a>
+				</div><!--more结束-->		
+		<!--楼层end-->
+				<p class="activess">还没挑到喜欢的礼物？看看下面的活动吧</p>
+		<!--活动进行中-->
+				<div id="activities">
+					<div class="activities">
+						<ul class="clearfix">
+							<li><a href="javascript:;"><img src="../img/20c777593419f7f877a2ca3b6c7d2c6b.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/497020eb9e5e4e0c48857d2d8935f28b.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/7d71b4a8c802d257b411cfeb186603cc.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/713e08614fb15e1d762b6db83aee3ad7.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/332521aa1a18fbe07a5c47dbdeb92d6b.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/0d629444805043786d14a68a3b00a3ca.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/57eeff0d6ef860661dae75798eb3a97f.jpg"/></a></li>
+							<li><a href="javascript:;"><img src="../img/ea4ac139372f9b8615a4a5bfb29c5f59.jpg"/></a></li>
+						</ul>
+					</div><!--.activities结束-->
+				</div><!--#activities结束-->
+				<div class="footerbo">
+					<ul class="clearfix">
+						<li>
+							<a href="javascript:;" class="common1">包邮</a>
+							<a href="javascript:;">吃货最爱</a>
+							<a href="javascript:;">心形礼物</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="common1">爱情信物</a>
+							<a href="javascript:;" class="common2">热情礼物</a>
+						</li>
+						<li>
+							<a href="javascript:;">货到付款</a>
+							<a href="javascript:;">好看的礼物</a>
+							<a href="javascript:;">贵的礼物</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="common2">创意&心意</a>
+							<a href="javascript:;">生日礼物</a>
+						</li>
+						<li>
+							<a href="javascript:;">第一次送礼物</a>
+							<a href="javascript:;">公仔抱枕</a>
+							<a href="javascript:;" class="common1">围巾手套</a>
+						</li>
+					</ul>
+				</div><!--footerbo结束-->
+			</div><!--banner_wrap结束-->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+<!--=====================================================页尾====================================================================-->
+			<div class="foot">
+				<div class="foot_wrap">
+					<ul>
+						<li><a href="javascript:;"><p class="ft_a1 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+						<li><a href="javascript:;"><p class="ft_a2 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+						<li><a href="javascript:;"><p class="ft_a3 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+						<li><a href="javascript:;"><p class="ft_a4 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+						<li><a href="javascript:;"><p class="ft_a5 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+						<li><a href="javascript:;"><p class="ft_a6 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+						<li><a href="javascript:;"><p class="ft_a7 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+						<li><a href="javascript:;"><p class="ft_a8 ft_pic"></p><p class="vm-cap">中国领先</p><p>私人定制商城</p></a></li>
+					</ul>
+					<div class="lay-link">
+						
+					<p class="mod-link">
+						<a href="javascript:;">首页</a>
+						<a href="javascript:;">商品分类</a>
+						<a href="javascript:;">商家登录</a>
+						<a href="javascript:;">招聘英才</a>
+						<a href="javascript:;">联系我们</a>
+						<a href="javascript:;">关于我们</a>
+						<a href="javascript:;">买家帮助</a>
+						<a href="javascript:;">手机卡当</a>
+						<a href="javascript:;">送礼导航</a>
+					</p>
+					<p class="mgt">
+   						 Copyright © 2006-2014 kadang.com 网上经营许可证号：浙B2-20140235    
+					</p>
+					</div>
+				</div><!--foot_wrap结束-->
+			</div><!--foot结束-->				
+		<script src="../jQuery/jquery-1.12.0.js"></script>		
+		<script src="../jquery-ui/jquery-ui.js"></script>
+		<script src="../js/shopshow.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
